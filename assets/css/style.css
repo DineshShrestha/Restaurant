@@ -19,3 +19,71 @@
     --h2-font:2.8rem;
     --p-font:1.1rem;
 }
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    outline: 1px solid red;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: var(--bg-color);
+    box-shadow: 0 2px 5px -2px #00001a;
+    transition: all .6s ease;
+}
+
+.logo img{
+    max-width: 180px;
+    width: 100%;
+    object-fit: contain;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    display: inline-block;
+    font-size: var(--p-font);
+    color: var(--text-color);
+    margin: 0 30px ;
+    padding: 2px 0;
+    border-bottom: 2px solid transparent;
+    transition: all .6s ease;
+}
+.navlist a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.nav-content{
+    outline: 3px solid red;
+    display: flex;
+    align-items: center;
+}
+.nav-content a{
+    outline: 3px solid green;
+    display: inline-block;
+    font-size: 23px;
+    color: var(--text-color);
+    margin: 0 10px;
+    transition: all .6s ease;
+}
+.nav-content a:hover{
+ transform: scale(1.1);   
+ color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 32px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 10px;
+    display: none;
+}
